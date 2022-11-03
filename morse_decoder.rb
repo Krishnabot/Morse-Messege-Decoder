@@ -36,3 +36,17 @@ morse_code = {
   '----.' => 9,
   '-----' => 0
 }
+
+def decode_char(char)
+  morse_code[char]
+end
+
+
+def decode_word(string)
+  word = ''
+  string.split.each do |char|
+    word += decode_char(char)
+  end
+  word
+end
+
