@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 @morse_code = {
   '.-' => 'A',
   '-...' => 'B',
@@ -44,7 +46,7 @@ end
 def decode_word(string)
   word = []
   string.split.each do |char|
-    word = word.push(decode_char(char))
+    word.push(decode_char(char))
   end
   word
 end
@@ -59,4 +61,4 @@ def decode(sentence)
 end
 
 puts decode('.... . .-.. .-.. --- / .-. ..- -... -.--')
-puts decode ('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
+puts decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
