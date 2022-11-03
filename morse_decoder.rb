@@ -41,7 +41,6 @@ def decode_char(char)
   @morse_code[char]
 end
 
-
 def decode_word(string)
   word = []
   string.split.each do |char|
@@ -58,6 +57,5 @@ def decode(sentence)
   end
   @joined_msg
 end
-
 
 puts decode('.... . .-.. .-.. --- / .-. ..- -... -.--')
